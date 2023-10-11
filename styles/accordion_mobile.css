@@ -1,0 +1,28 @@
+/*  ACCORDION MOBILE STYLE  */
+
+.accordion-container {
+    width: 100%;
+    padding: 40px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.accordion-answer {
+    display: none;
+    padding: 10px;
+}
+
+.arrow {
+    font-size: 18px;
+}

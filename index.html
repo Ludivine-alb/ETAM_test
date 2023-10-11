@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etam</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/accordion_mobile.css">
+    <link rel="stylesheet" type="text/css" href="./styles/swiper_mobile.css">
+    <link rel="stylesheet" type="text/css" href="./styles/cards_mobile.css">
+    <link rel="stylesheet" type="text/css" href="./styles/items_mobile.css">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+</head>
+<body>
+    <div class="floatbar">
+        <img src="./images/floating-bar.svg" alt="floating bar desktop">
+    </div>
+    <header>
+        <nav class="desktop-nav">
+            <img src="./images/NavBar.svg" alt="navbar desktop">
+        </nav>
+        <nav class="mobile-nav">
+            <img src="./images/NavBarMobile.svg" alt="navbar mobile">
+        </nav>
+    </header>
+            <div class="item">
+                <strong><h1 class="principal-title-mobile">LES RENDEZ-VOUS ETAM</h1></strong>
+                <img class="first-img" src="./images/Etam1.svg" alt="Image 1">
+                <div class="content">
+                    <strong><h1 class="principal-title-hidden">LES RENDEZ-VOUS ETAM</h1></strong>
+                    <div class="text">
+                        <p>Taille, forme, style : besoin de conseils pour trouver votre lingerie idéale ? Laissez-vous guider par nos conseillères expertes !</p>
+                        <button class="btn-rdv">PRENDRE RENDEZ-VOUS</button>
+                    </div>
+                </div>
+                    <div class="text2">
+                        <p class="more-to-know"> EN SAVOIR PLUS </p>
+                        <img src="./images/fleche.svg" alt="flèche vers le bas">
+                    </div>
+            </div>
+
+            <strong><h2 class="desktop-title">Nos 6 sessions shopping personnalisées :</h2></strong>
+            <div id="swiper-container">
+                <script>
+                fetch('layouts/_carousel.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('swiper-container').innerHTML = data;
+                });
+            </script>
+            </div>
+
+            <div id="cards-container">
+                <script>
+                    fetch('layouts/_card.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('cards-container').innerHTML = data;
+                    });
+                </script>
+            </div>
+            <div class="item2">
+                <img class="img2" src="./images/Etam3.svg" alt="Image 2">
+                <div class="content">
+                    <div class="list">
+                        <ol>
+                            <h2 class="principal-title">COMMENT ÇA MARCHE?</h2>
+                            <li>Je prends rendez-vous sur etam.com en magasin ou à distance</li>
+                            <li>Je crée ma Wishlist, pour que ma conseillère mette de côté les articles qui me plaisent et s’en inspire pour une sélection sur-mesure</li>
+                            <li>Le jour J, ma conseillère m’accueille et me présente sa sélection d’articles dans une cabine privatisée</li>
+                            <li>J’essaie les articles et précise ce qui me plait. Ma conseillère me conseille et me fait d’autres propositions.</li>
+                            <li>La sélection me plait ! Je règle et je choisis de me faire livrer à domicile ou en magasin.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+        <div id="accordion-container">
+            <script>
+                fetch('layouts/_accordion.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('accordion-container').innerHTML = data;
+                });
+            </script>
+        </div>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="/scripts/main.js"></script>
+        <footer>
+            <img src="./images/Logo.svg" alt="Logo Etam">
+        </footer>
+</body>
+</html>

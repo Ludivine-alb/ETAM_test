@@ -1,0 +1,47 @@
+/*  SWIPER MOBILE STYLE */
+
+.cards-container {
+    display: none;
+}
+.swiper-container {
+    padding: 30px;
+}
+
+.btn-swiper-yellow, .btn-swiper-red,.btn-swiper-pink {
+    background-color: transparent;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.swiper-slide {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    right: 0px;
+    color: black;
+}
+
+.cross-style::after {
+    font-size: 20px;
+}
+
+/*  SWIPER DESKTOP STYLE */
+
+@media (min-width: 768px) {
+    .swiper-container {
+        display: none;
+    }
+
+    .btn-rdv-swiper-yellow, .btn-rdv-swiper-red, .btn-rdv-swiper-pink {
+        background-color: transparent;
+        margin-top: 10px;
+        border-radius: 2px;
+        border: 1px solid;
+        padding: 5px;
+    }
+}

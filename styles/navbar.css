@@ -1,0 +1,16 @@
+.desktop-nav {
+    display: none;
+}
+
+.mobile-nav > img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+    .desktop-nav {
+        display: inline;
+    }
+}
